@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials — Talcott Ridge</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
+      margin-top: 2.5rem;
+    }
+
+    .testimonial-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem 1.75rem;
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .testimonial-card blockquote {
+      font-size: 0.97rem;
+      line-height: 1.8;
+      color: var(--text);
+      font-style: italic;
+      flex-grow: 1;
+    }
+
+    .testimonial-card blockquote::before {
+      content: '\201C';
+      font-size: 2.5rem;
+      color: var(--accent);
+      line-height: 0;
+      vertical-align: -0.6rem;
+      margin-right: 0.2rem;
+      font-style: normal;
+    }
+
+    .testimonial-meta {
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .testimonial-name {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .testimonial-name a {
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: var(--accent);
+      margin-left: 0.4rem;
+    }
+
+    .outcome-badge {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--light);
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.25rem 0.75rem;
+      white-space: nowrap;
+    }
+
+    .outcome-badge.accepted {
+      background: #EAF4EE;
+      color: #2A7A4B;
+      border-color: #B6DEC4;
+    }
+
+    .outcome-badge.interviews {
+      background: #EAF0FA;
+      color: var(--accent);
+      border-color: #B6CCE8;
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 3rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .stat { font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+    .stat-number {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Talcott Ridge</span>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="testimonials.html" class="active">Testimonials</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero" style="padding: 5rem 0 3rem;">
+    <div class="container">
+      <p class="hero-eyebrow">Testimonials</p>
+      <h1>Results from real students.</h1>
+      <p class="hero-sub">
+        Over 30 students advised across multiple application cycles.
+        These are their words, unedited, with their permission.
+      </p>
+
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Students advised</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">2023–27</div>
+          <div class="stat-label">Cycles represented</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">$0</div>
+          <div class="stat-label">Charged for most of it</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <div class="container">
+      <p class="hero-eyebrow">What Students Say</p>
+      <h2>In their own words</h2>
+      <div class="divider"></div>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <blockquote>
+            Eashwar is a super knowledgeable individual — if the MCAT score didn't
+            already speak for itself. He is super sweet and willing to help others
+            in their pre-med journey for the right reasons, and I'm so lucky to
+            have had him help.
+          </blockquote>
+          <div class="testimonial-meta">
+            <div>
+              <div class="testimonial-name">
+                Tina G.
+                <a href="https://www.linkedin.com/in/tina-giallias-259137256/" target="_blank" rel="noopener">LinkedIn ↗</a>
+              </div>
+              <div style="font-size:0.8rem; color:var(--muted); margin-top:0.2rem;">Personal statement, activities, advising · 2027 cycle</div>
+            </div>
+            <span class="outcome-badge">2027 Cycle</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote>
+            I am incredibly grateful for the opportunity to have been mentored by Eashwar.
+            I felt very comfortable asking questions and always heard back quickly.
+            The welcoming environment and open communication he provided truly allowed
+            me to grow and explore with confidence.
+          </blockquote>
+          <div class="testimonial-meta">
+            <div>
+              <div class="testimonial-name">
+                Theja S.
+                <a href="https://www.linkedin.com/in/theja-suresh-nagan" target="_blank" rel="noopener">LinkedIn ↗</a>
+              </div>
+              <div style="font-size:0.8rem; color:var(--muted); margin-top:0.2rem;">General advising · Incoming freshman</div>
+            </div>
+            <span class="outcome-badge">Early advising</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote>
+            I really enjoyed working with you. You were straightforward and definitely
+            eased the pressure going forward — very direct and plans extremely well.
+          </blockquote>
+          <div class="testimonial-meta">
+            <div>
+              <div class="testimonial-name">
+                Nidhir B.
+                <a href="https://www.linkedin.com/in/nidhir-balaji-ba046825b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+              </div>
+              <div style="font-size:0.8rem; color:var(--muted); margin-top:0.2rem;">Activities, general advising · In progress</div>
+            </div>
+            <span class="outcome-badge">In Progress</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote>
+            Working with you has been one of the most impactful professional relationships
+            I've had. You provided invaluable guidance on my personal statement, helped me
+            secure leadership opportunities and publications, and consistently connected me
+            with people and experiences that supported my growth. What stood out most was
+            your honesty, work ethic, and genuine commitment to my success.
+          </blockquote>
+          <div class="testimonial-meta">
+            <div>
+              <div class="testimonial-name">Ahan K.</div>
+              <div style="font-size:0.8rem; color:var(--muted); margin-top:0.2rem;">Personal statement, activities · 2027 cycle</div>
+            </div>
+            <span class="outcome-badge">2027 Cycle</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote>
+            Eashwar was relatively easy to work with and I never had any issues
+            when drafting up my med school application plan. He was also an excellent
+            adviser on how to approach independent research.
+          </blockquote>
+          <div class="testimonial-meta">
+            <div>
+              <div class="testimonial-name">Neha</div>
+              <div style="font-size:0.8rem; color:var(--muted); margin-top:0.2rem;">Activities section · In progress</div>
+            </div>
+            <span class="outcome-badge">In Progress</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <blockquote>
+            Eashwar had regular lunches with me to talk about my application and keep
+            me on track. He reviewed my statement and activities section for writing
+            style and content, and helped me create a well-balanced school list.
+            Overall he was incredibly supportive and always made time to help — I'm
+            very grateful for his support in this daunting process.
+          </blockquote>
+          <div class="testimonial-meta">
+            <div>
+              <div class="testimonial-name">Roma K.</div>
+              <div style="font-size:0.8rem; color:var(--muted); margin-top:0.2rem;">Personal statement, activities, school list · 2027 cycle</div>
+            </div>
+            <span class="outcome-badge">2027 Cycle</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="disclaimer" style="margin-top: 3rem;">
+        <strong>A note on these testimonials:</strong> All testimonials are published
+        with explicit written consent. Names are displayed as first name, last initial
+        unless the student opted to include a LinkedIn profile. Outcomes reflect
+        individual results and are not representative of typical or guaranteed results.
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <h2>Ready to get started?</h2>
+      <div class="divider"></div>
+      <p>Free to start. No commitment required. Just send over what you're working on.</p>
+      <p style="margin-top: 1.5rem;">
+        <a href="services.html" class="btn btn-primary">See How It Works</a>
+        <a href="talcottridgeadvising@duck.com?subject=Talcott Ridge Inquiry" class="btn btn-secondary">Get In Touch</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Talcott Ridge</div>
+    <p>Premed advising by a current medical student. Not affiliated with any medical school or admissions body.</p>
+    <p style="margin-top: 1rem; font-size: 0.8rem;">
+      Advising services only. No admissions outcomes guaranteed.
+    </p>
+  </footer>
+
+</body>
+</html>
