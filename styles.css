@@ -265,14 +265,14 @@ nav {
 /* ── Footer ── */
 footer {
   background: var(--navy);
-  color: #9BAFC7;
+  color: #CBD8E8;
   padding: 3rem 2rem;
   text-align: center;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.85rem;
 }
 
-footer a { color: #9BAFC7; }
+footer a { color: #CBD8E8; }
 footer a:hover { color: var(--white); }
 .footer-logo {
   font-size: 1rem;
